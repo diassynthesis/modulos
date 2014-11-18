@@ -2,6 +2,7 @@
 from osv import osv,fields
 
 class cadastro_cadastro(osv.osv):
+    '''as funções precisam vir antes da declaração dos campos '''
     _name = 'cadastro.cadastro'
 
 
