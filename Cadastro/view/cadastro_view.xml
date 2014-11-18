@@ -6,16 +6,30 @@
                 <field name="model">cadastro.cadastro</field>
                 <field name="type">form</field>
                 <field name="arch" type="xml">
-                    <form string="form_string">
-                        <field name="nome" select="1"/>
-                        <field name="idade"/>
-                        <field name="taxa"/>
-                        <field name="ativo"/>
-                        <field name="detalhes"/>
-                        <field name="check"/>
-                        <field name="valor1"/>
-                        <field name="valor2"/>
-                        <field name="total"/>
+                    <form string="form_string" version="7.0" >
+                        <strong><label string="MODULO"/></strong>
+                        <notebook>
+                            <page string="pagina1">
+                                <group>
+                                    <label for="nome"/>
+                                    <h1><field name="nome" select="1"/></h1>
+                                    <field name="idade"/>
+                                    <field name="taxa"/>
+                                    <field name="ativo"/>
+                                    <field name="detalhes"/>
+                                </group>
+                            </page>
+                            <page string="pagina2">
+                                <group>
+                                    <field name="check"/>
+                                    <field name="valor1"/>
+                                    <field name="valor2"/>
+                                    <field name="total"/>
+                                </group>
+                            </page>
+                        </notebook>
+
+
                     </form>
                 </field>
             </record>
@@ -45,7 +59,7 @@
 				id="act_cadastro_id"/>
 	
             
-            <menuitem id="cadastro_menu" name=" Cadastro" />
+            <menuitem id="cadastro_menu" name="Cadastro" />
             <menuitem id="cadastro_cadastro_menu" name="cadastro" parent="cadastro_menu" />
             <menuitem id="cadastro_menu_2" name="Cadastro" parent="cadastro_cadastro_menu" action="act_cadastro_id"/>
       
