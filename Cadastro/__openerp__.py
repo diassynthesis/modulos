@@ -13,3 +13,6 @@
 'installable':'True',
 'Certificate':''
 }
+
+
+#  'css': ['static/src/css/my_css.css'],
