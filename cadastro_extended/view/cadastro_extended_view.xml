@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+             <record model="ir.ui.view" id="cadastro_extended_form_view">
+                <field name="name">cadastro.cadastro.form</field>
+                <field name="model">cadastro.cadastro</field>
+                <field name="type">form</field>
+                <field name="inherit_id" ref="Cadastro.cadastro_form_view"/>
+                <field name="arch" type="xml">
+                    <form string="form_string">
+                        <field name="novo_campo"/>
+                    </form>
+                </field>
+            </record>
+            
+             <record model="ir.ui.view" id="cadastro_extended_tree_view">
+                <field name="name">cadastro.cadastro.tree</field>
+                <field name="model">cadastro.cadastro</field>
+                <field name="type">tree</field>
+                <field name="inherit_id" ref="Cadastro.cadastro_tree_view"/>
+                <field name="arch" type="xml">
+                    <tree string="tree_string">
+                        <field name="novo_campo"/>
+                    </tree>
+                </field>
+            </record>
+
+  </data>
+</openerp>

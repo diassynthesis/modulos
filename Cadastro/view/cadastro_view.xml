@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+             <record model="ir.ui.view" id="cadastro_form_view">
+                <field name="name">cadastro_cadastro_form</field>
+                <field name="model">cadastro.cadastro</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="form_string">
+                        <field name="nome" select="1"/>
+                        <field name="idade"/>
+                        <field name="taxa"/>
+                        <field name="ativo"/>
+                        <field name="detalhes"/>
+                        <field name="check"/>
+                        <field name="valor1"/>
+                        <field name="valor2"/>
+                        <field name="total"/>
+                    </form>
+                </field>
+            </record>
+            
+             <record model="ir.ui.view" id="cadastro_tree_view">
+                <field name="name">cadastro_cadastro_tree</field>
+                <field name="model">cadastro.cadastro</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                    <tree string="tree_string">
+                        <field name="nome"/>
+                        <field name="idade"/>
+                        <field name="taxa"/>
+                        <field name="ativo"/>
+                        <field name="detalhes"/>
+                        <field name="check"/>
+                        <field name="valor1"/>
+                        <field name="valor2"/>
+                        <field name="total"/>
+                    </tree>
+                </field>
+            </record>
+            
+                    
+	        <act_window name="Cadastro"
+				res_model="cadastro.cadastro"
+				id="act_cadastro_id"/>
+	
+            
+            <menuitem id="cadastro_menu" name=" Cadastro" />
+            <menuitem id="cadastro_cadastro_menu" name="cadastro" parent="cadastro_menu" />
+            <menuitem id="cadastro_menu_2" name="Cadastro" parent="cadastro_cadastro_menu" action="act_cadastro_id"/>
+      
+  </data>
+</openerp>
