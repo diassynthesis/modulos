@@ -13,30 +13,29 @@
                             <button class="oe_highlight" name="Botao" string="Botão" type="object"/>
                             <field name="state" widget="statusbar" statusbar_visible="draft,paid,canceled,invoiced,done"/>
                         </header>
-                        <notebook>
-                            <page string="pagina1">
                                 <sheet>
                                 <group>
-                                    <label for="nome"/>
+                                <group string="Dados Principais">
+                                    <h1><label for="nome"/></h1>
                                     <h1><field name="nome" select="1"/></h1>
                                     <field name="idade"/>
                                     <field name="taxa"/>
+                                    <separator colspan="4" string="Separador"/>
                                     <field name="ativo"/>
                                     <field name="detalhes"/>
                                 </group>
-                                </sheet>
-                            </page>
-                            <page string="pagina2">
-                                <group>
+                                <group string="Dados Secundários">
                                     <field name="check"/>
                                     <field name="valor1"/>
                                     <field name="valor2"/>
                                     <field name="total"/>
                                 </group>
-                            </page>
-                        </notebook>
-
-
+                                </group>
+                                <notebook>
+                                    <page string="Página1"></page>
+                                    <page string="Página 2"></page>
+                                </notebook>
+                                </sheet>
                     </form>
                 </field>
             </record>
