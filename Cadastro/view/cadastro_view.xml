@@ -11,8 +11,7 @@
                             <button class="oe_highlight" name="Botao" string="Botão" type="object"/>
                             <button class="oe_highlight" name="Botao" string="Botão" type="object"/>
                             <button class="oe_highlight" name="Botao" string="Botão" type="object"/>
-                            <field name="state" widget="statusbar" statusbar_visible="draft,paid,canceled,invoiced,done"/>
-                        </header>
+                            </header>
                                 <sheet>
                                 <group>
                                 <group string="Dados Principais">
@@ -29,6 +28,7 @@
                                     <field name="valor1"/>
                                     <field name="valor2"/>
                                     <field name="total"/>
+                                    <field name="cliente"/>
                                 </group>
                                 </group>
                                 <notebook>

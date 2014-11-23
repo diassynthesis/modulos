@@ -7,9 +7,9 @@
                 <field name="type">form</field>
                 <field name="inherit_id" ref="Cadastro.cadastro_form_view"/>  <!-->o nome do módulo é o nome da pasta do modulo a ser herdado<-->
                 <field name="arch" type="xml">
-                    <form string="form_string">
+                        <field name="taxa" position="after">
                         <field name="novo_campo"/>
-                    </form>
+                        </field>
                 </field>
             </record>
             
